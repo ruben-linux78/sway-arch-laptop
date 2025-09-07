@@ -1,0 +1,104 @@
+# Make 'nextword' (Ctrl+Right) and 'chopwordright' (Ctrl+Delete)
+# stop at word ends instead of at beginnings.
+set afterends
+
+# When soft line wrapping is enabled, make it wrap lines at blanks
+# (tabs and spaces) instead of always at the edge of the screen.
+set atblanks
+
+# Automatically indent a newly created line to the same number of
+# tabs and/or spaces as the preceding line -- or as the next line
+# if the preceding line is the beginning of a paragraph.
+set autoindent
+
+# Use bold text instead of reverse video text.
+set boldtext
+
+## The characters treated as closing brackets when justifying
+## paragraphs.  They cannot contain blank characters.  Only closing
+## punctuation, optionally followed by closing brackets, can end
+## sentences.
+##
+set brackets ""')>]}"
+
+## Do case sensitive searches by default.
+ set casesensitive
+
+# Constantly display the cursor position in the status bar or minibar.
+set constantshow
+
+# Remember the used search/replace strings for the next session.
+set historylog
+
+# Display line numbers to the left (and any anchors in the margin).
+set linenumbers
+
+#Use vim-style file locking when editing files.
+set locking
+
+## The opening and closing brackets that can be found by bracket
+## searches.  They cannot contain blank characters.  The former set must
+## come before the latter set, and both must be in the same order.
+##
+set matchbrackets "(<[{)>]}"
+
+# Suppress the title bar and show the filename plus a cursor-position
+# percentage in the space of the status bar.
+set minibar
+
+# Switch on multiple file buffers (inserting a file will put it into
+# a separate buffer).
+set multibuffer
+
+## Don't add newlines to the ends of files.
+set nonewlines
+
+# Remember the cursor position in each file for the next editing session.
+set positionlog
+
+## The email-quote string, used to justify email-quoted paragraphs.
+## This is an extended regular expression if your system supports them,
+## otherwise a literal string.  Default:
+set quotestr "^([ 	]*[#:>\|}])+"
+
+# Make the Home key smarter: when Home is pressed anywhere but at the
+# very beginning of non-whitespace characters on a line, the cursor
+# will jump to that beginning (either forwards or backwards).  If the
+# cursor is already at that position, it will jump to the true start
+# of the line (the left edge).
+set smarthome
+
+# Spread overlong lines over multiple screen lines.
+set softwrap
+
+# Use the end of the title bar for some state flags: I = auto-indenting,
+# M = mark, L = hard-wrapping long lines, R = recording, S = soft-wrapping.
+set stateflags
+
+## Use this tab size instead of the default; it must be greater than 0.
+set tabsize 4
+
+## Convert typed tabs to spaces.
+set tabstospaces
+
+# Snip whitespace at the end of lines when justifying or hard-wrapping.
+set trimblanks
+
+# Let an unmodified Backspace or Delete erase the marked region (instead
+# of a single character, and without affecting the cutbuffer).
+set zap
+
+# Colors
+set titlecolor magenta
+set statuscolor magenta
+set errorcolor red
+set selectedcolor red
+set stripecolor yellow
+set numbercolor green
+set keycolor green
+set functioncolor blue
+
+# Syntax highlighting
+include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano/extra/*.nanorc"
+# include "/opt/nanorc/*.nanorc"
